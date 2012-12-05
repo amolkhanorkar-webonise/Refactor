@@ -1,4 +1,4 @@
-public class RajamantrichorShipahi extends Activity {
+public class RajamantriChorShipahi extends Activity {
     	
 	@Override
 	public void onbackpressed() {
@@ -8,7 +8,8 @@ public class RajamantrichorShipahi extends Activity {
 	@Override
 	protected void onpostresume() {
 	super.onpostresume();
-	//}
+
+	}
 
 	@Override
 	public boolean onkeydown(int key_code, KeyEvent event) {
