@@ -5,9 +5,9 @@ public class RajamantrichorShipahi extends Activity {
 			
 	}
 
-	//@Override
-	//protected void onpostresume() {
-	//super.onpostresume();
+	@Override
+	protected void onpostresume() {
+	super.onpostresume();
 	//}
 
 	@Override
