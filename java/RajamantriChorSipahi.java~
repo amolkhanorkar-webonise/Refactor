@@ -81,8 +81,10 @@ public class RajamantriChorShipahi extends Activity {
     static Button btnPod2;
     static Button btnPod3;
     static Button btnPod4;
-    	
-    
+    Button btnShowResult;	
+    Button btnRestart;
+    Button btnSignin;
+    Button btnGuess;
     EditText editTxtPlayer1;
     EditText editTxtPlayer2;
     EditText editTxtPlayer3;
@@ -231,59 +233,69 @@ public class RajamantriChorShipahi extends Activity {
     playersArray[1] = player2_name;
     playersArray[2] = player3_name;
     playersArray[3] = player4_name; 			
-    txtPlayer1 = (TextView) findViewById(R.id.txtPlayer1);
-    txtPlayer1.setText("1."+player1_name + " [" + p1score + "]");
+			 		
+					txtPlayer1 = (TextView) findViewById(R.id.txtPlayer1);
+					txtPlayer1.setText("1."+player1_name + " [" + p1score + "]");
 					
-    txtPlayer2 = (TextView) findViewById(R.id.txtPlayer2);
-    txtPlayer2.setText("2."+player2_name+ " [" + p2score + "]");
+					txtPlayer2 = (TextView) findViewById(R.id.txtPlayer2);
+					txtPlayer2.setText("2."+player2_name+ " [" + p2score + "]");
 					
-    txtPlayer3 = (TextView) findViewById(R.id.txtPlayer3);
-    txtPlayer3.setText("3."+player3_name+ " [" + p3score + "]");
+					txtPlayer3 = (TextView) findViewById(R.id.txtPlayer3);
+					txtPlayer3.setText("3."+player3_name+ " [" + p3score + "]");
 					
-    txtPlayer4 = (TextView) findViewById(R.id.txtPlayer4);
-    txtPlayer4.setText("4."+player4_name+ " [" + p4score + "]");
+					txtPlayer4 = (TextView) findViewById(R.id.txtPlayer4);
+					txtPlayer4.setText("4."+player4_name+ " [" + p4score + "]");
 					
-    btnPlay = (Button) findViewById(R.id.btnPlay);
+				btnPlay = (Button) findViewById(R.id.btnPlay);
 				
-    btnPlay.setOnClickListener(new onClickListener() {
+				btnPlay.setOnClickListener(new onClickListener() {
 		 			
-  public void onClick(View v) {
+		 			public void onClick(View v) {
 		 			
-    if(btnPlay.getText().equals("SHUFFLE")){
 		 				
-    RajaMantri.this.shuffle();
+		 				if(btnPlay.getText().equals("SHUFFLE")){
+		 				
+		 					RajaMantri.this.shuffle();
 		 					
-    }else{
-		 							 					
-    RajaMantri.this.makeGuess();
+		 				}else{
+		 					
+		 					
+		 					RajaMantri.this.makeGuess();
 										
-    Log.v("RajaMantri", "########## Player Name:" + player1_name +" Role:" + player1_role);
-    Log.v("RajaMantri", "########## Player Name:" + player2_name +" Role:" + player2_role);
-    Log.v("RajaMantri", "########## Player Name:" + player3_name +" Role:" + player3_role);
-    Log.v("RajaMantri", "########## Player Name:" + player4_name +" Role:" + player4_role);
-   }
-  }
-  });
-  }
-  }
+		 					Log.v("RajaMantri", "########## Player Name:" + player1_name +" Role:" + player1_role);
+		 					Log.v("RajaMantri", "########## Player Name:" + player2_name +" Role:" + player2_role);
+		 					Log.v("RajaMantri", "########## Player Name:" + player3_name +" Role:" + player3_role);
+		 					Log.v("RajaMantri", "########## Player Name:" + player4_name +" Role:" + player4_role);
+						}
+						
+		 				
+		 			}
+		 		});
+		         
+		         
+		         
+				}
+		         
+		     }
 		     
-  });
-  }
+		 	});
+			}
+
 		
-  });
+		});
  		 
        
-  }
+    }
     
     
-  public void makeGuess(){
+    public void makeGuess(){
     	
-    btnPlay.setText("SHUFFLE");
-    count = 0;
-    btnPlay.setText("SHUFFLE");
+    	btnPlay.setText("SHUFFLE");
+			count = 0;
+			btnPlay.setText("SHUFFLE");
 			
-    btnPod1.setClickable(true);
-    btnPod2.setClickable(true);
+			btnPod1.setClickable(true);
+			btnPod2.setClickable(true);
 			btnPod3.setClickable(true);
 			btnPod4.setClickable(true);
 			
