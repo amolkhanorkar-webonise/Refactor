@@ -1,4 +1,4 @@
-public class RajamantrichorShipahi extends Activity {
+public class RajamantriChorShipahi extends Activity {
     	
 	@Override
 	public void onbackpressed() {
