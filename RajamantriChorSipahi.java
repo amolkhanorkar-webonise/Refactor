@@ -5,10 +5,10 @@ public class RajamantriChorShipahi extends Activity {
 			
 	}
 
-	@Override
-	protected void onpostresume() {
-	super.onpostresume();
-	}
+	//@Override
+	//protected void onpostresume() {
+	//super.onpostresume();
+	//}
 
 	@Override
 	public boolean onkeydown(int key_code, KeyEvent event) {
