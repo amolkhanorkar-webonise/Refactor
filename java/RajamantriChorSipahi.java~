@@ -8,7 +8,7 @@ public class RajamantriChorShipahi extends Activity {
   @Override
   public boolean onKeyDown(int key_code, KeyEvent event) {
     AlertDialog dialog = new AlertDialog.Builder(this).create();
-    dialog.setTitle("Exit game!");
+    dialog.setTitle("Exit from game!");
     dialog.setMessage("Are you sure you want to exit the game?");
     dialog.setButton("Exit", new DialogInterface.onClickListener() {
 			
